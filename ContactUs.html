@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Blue Rocket Studio</title>
+
+    <style>
+         #row{
+            width: 100%;
+            min-height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            font-family: Poppins-Regular,sans-serif;
+            font-weight: bold;
+            
+        }
+
+        form{
+            font-family: Poppins-Regular,sans-serif;
+            
+        }
+        #info{
+
+            text-align: center;
+            
+        }
+        #address{
+            margin-top: 110px;
+        }
+        h5{
+            margin-top: 50px;
+            font-weight: bolder;
+        }
+        p{
+            color: white;
+            
+        }
+        .bg-image{
+            background-image: url(https://media.istockphoto.com/id/108348627/photo/modern-glass-architecture.jpg?b=1&s=170667a&w=0&k=20&c=ATA0glEJzLLTjNPluNILdtg9LwymgXYwxs71zy9WHmQ=);
+            background-repeat: no-repeat;
+            background-size: 1000px;
+           
+        }
+        .label-input100{
+            font-family: Poppins-Regular;
+            font-size: 12px;
+            color: #555;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            min-height: 55px;
+            border: 1px solid #e6e6e6;
+            border-bottom: none;
+            padding: 10px 25px;
+            margin-top: 15px;
+            margin-bottom: 0;
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+      
+
+    </style>
+
+</head>
+<body>
+
+                    <!-- Form -->
+
+                    <div class="container-fluid px-5 my-5">
+                        <div class="row justify-content-center" id="row">
+                        <div class="col-xl-10">
+                            <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+                            <div class="card-body p-0">
+                                <div class="row g-0">
+
+                                <div id="info" class="col-sm-6 d-none d-sm-block bg-image">
+                                    <h5 id="address">Address</h5>
+                                    <p>Iponan, Cagayan de Oro City <br>
+                                        Philippines 9000</p>
+
+                                    <h5>Lets Talk</h5>
+                                    <p>088 327-4533</p>
+
+                                    <h5>Support</h5>
+                                    <p>studios.bluerocket@gmail.com</p>
+
+                                </div>
+                                <div class="col-sm-6 p-4">
+                                    <div class="text-center">
+                                    <div class="h3 fw-light">Send Us A Message</div>
+                                    
+                                    </div>
+                    
+                    
+                                    <form id="contactForm" class="form-control">
+                    
+                                    <!-- Name Input -->
+                                    <label class="label-input100">TELL US YOUR NAME</label>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" id= "firstname" class="form-control" placeholder="Enter First name">
+                                        <label for="firstname">First Name</label>
+
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" id= "lastname" class="form-control" placeholder="Enter Last name">
+                                        <label for="lastname">Last Name</label>
+                                    </div>
+                    
+                                    <!-- Email Input -->
+                                    <div class="form-floating mb-2">
+                                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+                                        <label for="emailAddress">Email Address</label>
+                                    </div>
+                                    
+                                    <!-- Number Input -->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" id="emailAddress" type="number" placeholder="phone Number"/>
+                                        <label for="emailAddress">Phone Number</label>
+                                    </div>
+
+                                    <!-- Message Input -->
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                                        <label for="message">Message</label>
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                                    </div>
+                                    
+                    
+                                    <!-- Submit button -->
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                                    </div>
+                                    </form>
+                                    <!-- End of contact form -->
+                    
+                                </div>
+                                </div>
+                    
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+
+
+                
+                    
+
+
+                  <!--  Navigation  -->
+                  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-3">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#"> <img src="Images/BRLOGO.svg" width="30" height="30"> </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item px-5">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                <li class="nav-item px-5">
+                                    <a class="nav-link" href="#">Services</a>
+                                </li>
+                                <li class="nav-item px-5">
+                                    <a class="nav-link" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item px-5">
+                                    <a class="nav-link">Job Board</a>
+                                </li>
+                                <li class="nav-item px-5">
+                                    <a class="nav-link">Contact Us</a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                  </nav>
+
+                    <!-- Footer -->
+                    <footer class="text-center text-lg-start bg-light text-muted">
+                        <div class="container">
+                            <div class="row mt-2">
+                                        <div class="col-xl-3 col-lg-4 col-md-6">
+                                        <div>
+                                            <img src="C:\Users\Acer\OneDrive\Documents\bluerocketstudio\Images\BLLGWT.svg" style="height: 100px; width: 200px; "> </img>
+                                        
+                                            <i class="far fa-gem fa-lg mb-4" style="color: #f9a169;"></i>
+                                            <blockquote class="blockquote pb-2">
+                                                
+                                                <i class="fas fa-angle-double-left" style="color: #f9a169;"></i>
+                                                <span class="lead font-bold">Launching your Business</span>
+                                                <i class="fas fa-angle-double-right" style="color: #f9a169;"></i>
+                                                
+                                            </blockquote>
+                                        </div>
+
+
+                                        </div>
+                                        <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+                                        <div class="">
+                                            <h4 style="margin-top: 5px;">Quick Link</h4>
+                                            <ul class="list-unstyled">
+                                            <li>
+                                                <a href="index.html" class="align-content-center">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="align-content-center">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="align-content-center">Service</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="align-content-center">Contact</a>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-6">
+                                        <div>
+                                            <h4 style="margin-top: 5px;">Service</h4>
+                                            <ul class="list-unstyled">
+                                            <li>
+                                                <a href="#" class="text-decoration-none">Telemarketing</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-decoration-none">Sales</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-decoration-none">Web Design</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-decoration-none">Graphics Design</a>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-3 col-md-6">
+                                        <div>
+                                            <h4 style="margin-top: 5px;">Address</h4>
+                                            <ul class="list-unstyled">
+                                            <li>(088) 327-4533
+                                                <p></p>
+                                            </li>
+                                            <li>
+                                                <p><a href="#">studios.bluerocket@gmail.com</a>
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Iponan
+                                                Cagayan de Oro City, Philippines</p>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                        </div>
+                                </div>
+                                        <div class="d-flex justify-content-center">
+                                    
+                                        
+                                        </div>
+                        </div>
+                </footer>
+    
+</body>
+</html>
