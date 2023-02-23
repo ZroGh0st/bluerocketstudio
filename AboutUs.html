@@ -9,19 +9,51 @@
             <title>Blue Rocket Studio</title>
 
         </head>
+
+        <style>
+          #row{
+            width: 100%;
+            min-height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 15px;
+            font-family: Poppins-Regular,sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #imgleft{
+          width: 50%;
+        }
+
+        #about{
+          width: 50%;
+        }
+        #image{
+          height: 75%;
+          width: 80%;
+          margin-top: 20px;
+        }
+
+        </style>
     <body>
 
-            <div class="container-fluid mt-5" style="height: 80vh;">
-              <div class="row p-3 mt-5" >
+            <div class="container-fluid mt-5">
+              <div class="row justify-content-center" id="row">
                
-                <div class="col-5  mt-5" style="max-height: 65vh; margin-right: 20px;">
-                    <a><img src="Images/BRLOGO.svg" class= "img-fluid" style="height: 100%; width: 100%;"> </a>
+                <div class="col-5  mt-5" id="imgleft">
+                    <a><img src="Images/BRLOGO.svg" id="image"> </a>
                     
 
                 </div>
 
 
-                <div class="col mt-5" style="max-height: 65vh; margin-right: 60px;">
+                <div class="col mt-5" id="about">
                     <h1 style="text-align: center;"> About Us</h1> <br><br>
                     <p>
                         A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
@@ -123,7 +155,7 @@
                                     <a href="#" class="align-content-center">Service</a>
                                   </li>
                                   <li>
-                                    <a href="#" class="align-content-center">Contact</a>
+                                    <a href="#" class="align-content-center">Connect with Us</a>
                                   </li>
                                 </ul>
                               </div>
