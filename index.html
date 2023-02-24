@@ -7,36 +7,114 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>Blue Rocket Studio</title>
+    <style>
+      nav{
+        border-top: white solid 1px;
+        font-family: Poppins-Regular,sans-serif;
+        font-weight: bold;
+      }
+
+      #left{
+        background-color: white;
+        align-items: center;
+        width: 60%;
+        height: 100vh;
+        clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%); 
+      }
+      #right{
+        background-color: aqua;
+        width: 40%;    
+	      
+        height: 100vh;
+      }
+      #row{
+            width: 100%;
+            min-height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: aqua; 
+      }
+      #container{
+        margin-top: 20px;
+        width: 75%;
+        
+      }
+      #blue{
+        width: 60%;
+        height: 60%;
+        margin-top: 100px;
+        margin-left: 150px;
+      }
+
+      #image1{
+        margin-top: 100px;
+        height: 100px;
+        width: 400px;
+       
+      }
+      #image2{
+        height: 100px;
+        width: 600px;
+       
+      }
+      #image3{
+        height: 100px;
+        width: 600px;
+       
+      }
+      li{
+        color: white;
+      }
+      #main{
+        background-color: aqua;
+      }
+     
+
+    </style>
 
 </head>
 <body>
 
-          <div class="container-fluid">
-                <div class="row text-center p-5">
+          <div class="container-fluid" id="main">
+                <div class="row" id="row">
+
+                  <div class="col" id="left">
+                    <picture>
+                    <a href="Homepage.html">   <img src="Images/BRLOGO.svg" alt="Blue Rocket Studio" class="img-fluid" id="blue"></a>
+                    </picture> 
+                </div>
                   
-                    <div style="height: 80px; position:sticky">
-                    
-                      <div class="h-100 d-inline-block" style="width: auto;"><img src="Images/bluetrans.png" style="width: 100%;height: 100%"></div>
-                      <div class="h-100 d-inline-block" style="width: auto;"><img src="Images/rockettrans.png" style="width: 100%;height: 100%"></div>
-                      <div class="h-100 d-inline-block" style="width: auto;"><img src="Images/studiontrans.png" style="width: 100%;height: 100%"></div>
-                    
-                    </div>
+                        <div class="col" id="right">
+                          <div class="container" id="container">
+                        
+                                <center><img src="Images/bluetrans.png" class="image" id="image1"></center>
+                                <center> <img src="Images/rockettrans.png" class="image" id="image2"></center>
+                                  <center><img src="Images/studiontrans.png" class="image" id="image3"></center>
+
+                                  <br><br><br><br>
+                               
+                                  <p>
+                                  A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+                                </p>
+                            
+                                <p>
+                                  
+
+                        
+                          </div>
+                        </div>
+
+                        
                 
                   </div>
           
-                        <div class="row p-2">
-                            <div class="col" style="max-height: 63vh" >
-                                <picture>
-                                <a href="Homepage.html">   <img src="Images/BRLOGO.svg" alt="Blue Rocket Studio" class="img-fluid" style="width: 100%;height: 100%"></a>
-                                </picture> 
-                            </div>
-                        </div>
-                        <br><br>
+                        
+                        
               
               </div>   
             
               
-                      <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light ">
+                      <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid">
                           <a class="navbar-brand" href="#"> <img src="Images/BRLOGO.svg" width="30" height="30"> </a>
                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +134,7 @@
                               <li class="nav-item px-5">
                                 <a class="nav-link" href="#">Portfolio</a>
                               </li>
-                              <li class="nav-item px-5">
+                              <li class="nav-item px-5" href="JobBoard.html">
                                 <a class="nav-link">Job Board</a>
                               </li>
                               <li class="nav-item px-5">
