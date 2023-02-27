@@ -44,6 +44,45 @@
             height: 100px;
             width: 180px;
         }
+
+        /*social -media*/
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+        }
+        .socials li{
+            margin: 0 10px;
+        }
+        .socials a{
+            text-decoration: none;
+            color: #fff;
+            border: 1.1px solid white;
+            padding: 5px;
+            border-radius: 50%;
+        }
+        .socials a i{
+            font-size: 1.1rem;
+            width: 20px;
+            transition: color .4s ease;
+        }
+        .socials a:hover i{
+            color: dodgerblue;
+        }
+        /* copyright*/
+        .footer-copyright{
+            background: #000;
+            width: 100vw;
+            padding: 20px 20px 50px 20px;
+        }
+        .footer-copyright p{
+            font-size: 14px;
+            word-spacing: 2px;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 
 
@@ -178,12 +217,12 @@
                     <div class="container p-4 pb-0">
                         <!-- Section: CTA -->
                         <section class="">
-                        <p class="d-flex justify-content-center align-items-center">
-                            <span class="me-3">Register for free</span>
-                            <button type="button" class="btn btn-outline-light btn-rounded">
-                            Sign up!
-                            </button>
-                        </p>
+                            <ul class="socials">
+                                <li><a href="#"><img src="Icons/Clickup.png" id="icons"></i></a></li>
+                                <li><a href="#"><img src="Icons/Clickup.png" id="icons"></i></a></li>
+                                <li><a href="#"><img src="Icons/Clickup.png" id="icons"></i></a></li>
+                               
+                            </ul>
                         </section>
                         <!-- Section: CTA -->
                     </div>
@@ -191,8 +230,8 @@
                 
                     <!-- Copyright -->
                     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                        © 2020 Copyright:
-                        <a class="text-white" href="index.html">bluerocketstudio.com</a>
+                        © 2023 Copyright:
+                        <a class="text-white" href="index.html" style="text-decoration: none;">bluerocketstudio.com</a>
                     </div>
                     <!-- Copyright -->
                     </footer>
