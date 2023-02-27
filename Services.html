@@ -11,12 +11,12 @@
     <style>
         
         #maincontainer{
-            margin-top: 100px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             width: 100%;
             height: 100%;
+        
         }
         #rowimg{
             display: flex;
@@ -37,7 +37,7 @@
             padding: 20px;
             padding-left: 30px;
             padding-right: 30px;
-            margin-top: 40px;
+            margin-top: 60px;
         }
 
         .colTechIcons{
@@ -86,6 +86,7 @@
             width: 20vh;
         }
         
+        
        
     </style>
 
@@ -93,11 +94,73 @@
 </head>
 <body>
 
+
+  
+                <!-- Modal -->
+                <div class="modal fade" id="contactForm" tabindex="-1" aria-labelledby="contactFormLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="contactFormLabel">How Can We Help?</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="contactForm" class="form-control">
+                                    
+                                <!-- Name Input -->
+                                <label class="label-input100">TELL US YOUR NAME</label>
+                                <div class="form-floating mb-3">
+                                    <input type="text" id= "firstname" class="form-control" placeholder="Enter First name">
+                                    <label for="firstname">First Name</label>
+
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" id= "lastname" class="form-control" placeholder="Enter Last name">
+                                    <label for="lastname">Last Name</label>
+                                </div>
+
+                                <!-- Email Input -->
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+                                    <label for="emailAddress">Email Address</label>
+                                </div>
+                                
+                                <!-- Number Input -->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="emailAddress" type="number" placeholder="phone Number"/>
+                                    <label for="emailAddress">Phone Number</label>
+                                </div>
+
+                                <!-- Message Input -->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                                    <label for="message">Message</label>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                                </div>
+                                
+
+                                <!-- Submit button -->
+                                <div class="d-grid">
+                                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                                </div>
+                                </form>
+                                <!-- End of contact form -->
+
+                        </div>
+                        <div class="modal-footer text-center" style="background-color:#3786e6; justify-content: center;">
+                            © 2023 Copyright:
+                            <a class="text-white" href="index.html" style="text-decoration: none;">bluerocketstudio.com</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+
         <div class="container-fluid" id="maincontainer">
             
             
-             
-
+            
                     <section id="service-list">
                         <div class="row p-2" ><h1 id="service"> What We Do</h1></div> 
                         
@@ -107,7 +170,7 @@
                                 <div class="card-body">
                                 <h5 class="card-title">Content Management</h5>
                                 <p class="card-text"> Developing content strategies, creating and curating contents, managing workflows and approvals, and distributing content across multiple channels and platforms.</p>
-                                <a href="#" class="btn btn-primary">Let's Talk</a>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactForm">Let's Talk</a>
                                 </div>
                             </div>
 
@@ -116,7 +179,7 @@
                                 <div class="card-body">
                                 <h5 class="card-title">Digital Marketing</h5>
                                 <p class="card-text">Increase online visibility, attract and engage target audiences, generate leads, and drive conversions. Highly customizable and can be tailored to meet your business needs.</p>
-                                <a href="#" class="btn btn-primary">Let's Talk</a>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactForm">Let's Talk</a>
                                 </div>
                             </div>
 
@@ -127,7 +190,7 @@
                                 <div class="card-body">
                                 <h5 class="card-title">Graphics & Video</h5>
                                 <p class="card-text"> Photo retouching, image resizing, color correction, creating custom graphics, audio mixing, special effects, and adding transitions that stands out and captures the attention of your target audience.</p>
-                                <a href="#" class="btn btn-primary">Let's Talk</a>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactForm">Let's Talk</a>
                                 </div>
                             </div>
 
@@ -140,7 +203,7 @@
                                 <div class="card-body">
                                 <h5 class="card-title">Telesales VA </h5>
                                 <p class="card-text">Reach out to prospects, generate leads, and close sales. We will help your business reach a wider audience, build relationships with potential customers, and close more deals.</p>
-                                <a href="#" class="btn btn-primary">Let's Talk</a>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactForm">Let's Talk</a>
                                 </div>
                             </div>
 
@@ -149,7 +212,7 @@
                                 <div class="card-body">
                                 <h5 class="card-title">Admin VA</h5>
                                 <p class="card-text">Providing remote administrative support and assistance. We delegate dedicated and reliable professionals that can help you save time, reduce costs, and improve productivity.</p>
-                               <br> <a href="#" class="btn btn-primary">Let's Talk</a>
+                               <br> <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactForm">Let's Talk</a>
                                 </div>
                             </div>
 
@@ -160,7 +223,7 @@
                                 <div class="card-body">
                                 <h5 class="card-title">Web Development</h5>
                                 <p class="card-text">Build and maintain websites and web application including website design and layout, web application development, e-commerce development, content management system (CMS) integration, and search engine optimization (SEO).</p>
-                                <a href="#" class="btn btn-primary">Let's Talk</a>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactForm">Let's Talk</a>
                                 </div>
                             </div>
 
