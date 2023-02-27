@@ -21,16 +21,25 @@
 
         #maincontainer{
             margin-top: 80px;
-            display: flex;
-            flex-wrap: wrap;
+           
         }
         .accordion{
             border-bottom: solid gainsboro 1px;
 
         }
-        #headingOne{
-           
+        .socials{
+            height: 100px;
+            width: 180px;
+            display: inline;
         }
+        #list{
+            display: inline;
+        }
+        #service-list{
+          display: flex;
+          flex-wrap: wrap;  
+        }
+       
 
     </style>
 
@@ -41,7 +50,7 @@
 
         <div class="container-fluid" id="maincontainer">
 
-            <h1 id="career">Careers</h1>
+           <div class="row"> <h1 id="career">Careers</h1></div>
 
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
@@ -176,17 +185,15 @@
                     <li class="nav-item px-5">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item px-5">
-                        <a class="nav-link active" aria-current="page" href="AboutUs.html">About Us</a>
-                      </li>
+                    
                 <li class="nav-item px-5">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="Services.html">Services</a>
                 </li>
                 <li class="nav-item px-5">
                     <a class="nav-link" href="#">Portfolio</a>
                 </li>
-                <li class="nav-item px-5 disabled" href="JobBoard.html">
-                    <a class="nav-link">Job Board</a>
+                <li class="nav-item px-5 disabled">
+                    <a class="nav-link" href="JobBoard.html">Job Board</a>
                 </li>
                 <li class="nav-item px-5" href="ContactUs.html">
                     <a class="nav-link">Contact Us</a>
@@ -196,33 +203,25 @@
         </div>
   </nav>
 
-  <section class="">
-    <!-- Footer -->
-    <footer class="text-center text-white" style="background-color: #0a4275;">
-      <!-- Grid container -->
-      <div class="container p-4 pb-0">
-        <!-- Section: CTA -->
-        <section class="">
-          <p class="d-flex justify-content-center align-items-center">
-            <span class="me-3">Register for free</span>
-            <button type="button" class="btn btn-outline-light btn-rounded">
-              Sign up!
-            </button>
-          </p>
-        </section>
-        <!-- Section: CTA -->
-      </div>
-      <!-- Grid container -->
-  
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-white" href="index.html">MDBootstrap.com</a>
-      </div>
-      <!-- Copyright -->
+  <footer class="text-center text-white" style="background-color: #0a4275;">
+                  
+    <div class="container p-4">
+      
+        <ul class="list-group list-unstyled" id="list">
+            <li id="list"><a href="#!" role="button"><img src="Icons/fb.svg" class="socials"></a></li>
+            <li id="list"><a href="#!" role="button"><img src="Icons/linkedin.svg" class="socials"></a></li>
+            <li id="list"> <a href="#!" role="button"><img src="Icons/linkedin.svg" class="socials"></a></li>
+        </ul>
+       
+    </div>
+   
+    
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Copyright:
+        <a class="text-white" href="index.html" style="text-decoration: none;">bluerocketstudio.com</a>
+    </div>
+   
     </footer>
-    <!-- Footer -->
-  </section>
     
     
 </body>

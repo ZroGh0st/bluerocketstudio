@@ -9,34 +9,44 @@
     <title>Blue Rocket Studio</title>
 
     <style>
-        .col-sm-6{
-            background-color:red;
-        }
+        
         #maincontainer{
             margin-top: 100px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             width: 100%;
-            height: auto;
+            height: 100%;
         }
         #rowimg{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            width: 100%;
-            text-align: center;
-            height: auto;
+            width: 80%;
+            height: 50%;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            
         }
+        #service-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 80%;
+            height: 50%;
+            padding: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 40px;
+        }
+
         .colTechIcons{
             
             width: 16.66%;
             height: auto;
         }
         .wrapper{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+           
             height: auto;
             margin: 10px;
         }
@@ -44,31 +54,38 @@
             height: 100px;
             width: 180px;
         }
-
-        /*social -media*/
         .socials{
-            list-style: none;
-            display: flex;
-            align-items: center;
+            height: 100px;
+            width: 180px;
+        }
+        #list{
+            display: inline;
+        }
+       
+        #service{
+            margin: 30px;
+           text-align: center;
+           display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            
+            font-family: "Montserrat",sans-serif;
+            font-size: 60px;
+            font-weight: 600;
         }
-        .socials li{
-            margin: 0 10px;
+        .card{
+            height: auto;
+            width: 25%;
+            margin: 20px;
         }
-        .socials img{
-            border: 1.1px solid white;
-            padding: 5px;
-            border-radius: 50%;
-            
+        .card-group{
+            display: flex;
+            flex-wrap: wrap;
         }
-        .socials a img{
-            width: 20px;
-            transition: color .4s ease;
+        .card-img-top{
+            height: 15vh;
+            width: 20vh;
         }
-        .socials a:hover img{
-            color: yellow;
-        }
+        
        
     </style>
 
@@ -76,33 +93,88 @@
 </head>
 <body>
 
-        <div class="container-lg" id="maincontainer">
-           <div class="container"><h1> Services</h1>
-            <p> Blue Rocket Studio </p> </div>
+        <div class="container-fluid" id="maincontainer">
+            
+            
+             
 
-            <div class="row services-list">
-                <div class="col-sm-6 col-md-6 col-lg-3 border border-0"> <div class="">
-                    <img src="Icons/Hootsuite.png" id="icons"></div></div>
-                <div class="col-sm-6 col-md-6 col-lg-3 border border-0"><div class="">
-                    <img src="Icons/Hootsuite.png" id="icons"></div></div>
-                <div class="col-sm-6 col-md-6 col-lg-3 border border-0"><div class="">
-                    <img src="Icons/Hootsuite.png" id="icons"></div></div>
-                <div class="col-sm-6 col-md-6 col-lg-3 border border-0"><div class="">
-                    <img src="Icons/Hootsuite.png" id="icons"></div></div>
-                <div class="col-sm-6 col-md-6 col-lg-3 border border-0"><div class="">
-                    <img src="Icons/Hootsuite.png" id="icons"></div></div>
-                <div class="col-sm-6 col-md-6 col-lg-3 border border-0"><div class="">
-                    <img src="Icons/Hootsuite.png" id="icons"></div></div>
-                <div class="col-sm-6 col-md-6 col-lg-3 border border-0"><div class="">
-                    <img src="Icons/Hootsuite.png" id="icons"></div></div>
-                <div class="col-sm-6 col-md-6 col-lg-3 border border-0"><div class="">
-                    <img src="Icons/Hootsuite.png" id="icons"></div></div>
+                    <section id="service-list">
+                        <div class="row p-2" ><h1 id="service"> What We Do</h1></div> 
+                        
+                        <div class="card-group">
+                            <div class="card">
+                                <img class="card-img-top" src="Icons/content.png" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Content Management</h5>
+                                <p class="card-text"> Developing content strategies, creating and curating contents, managing workflows and approvals, and distributing content across multiple channels and platforms.</p>
+                                <a href="#" class="btn btn-primary">Let's Talk</a>
+                                </div>
+                            </div>
 
-            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="Icons/marketing.png" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Digital Marketing</h5>
+                                <p class="card-text">Increase online visibility, attract and engage target audiences, generate leads, and drive conversions. Highly customizable and can be tailored to meet your business needs.</p>
+                                <a href="#" class="btn btn-primary">Let's Talk</a>
+                                </div>
+                            </div>
 
 
-            <div class="row pb-5" id="rowimg">
-               <div class="row pt-3 pb-5"><h1> TEST</h1></div> 
+
+                            <div class="card">
+                                <img class="card-img-top" src="Icons/videoediting.png" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Graphics & Video</h5>
+                                <p class="card-text"> Photo retouching, image resizing, color correction, creating custom graphics, audio mixing, special effects, and adding transitions that stands out and captures the attention of your target audience.</p>
+                                <a href="#" class="btn btn-primary">Let's Talk</a>
+                                </div>
+                            </div>
+
+                    </div>
+
+                        
+                        <div class="card-group mt-4">
+                            <div class="card">
+                                <img class="card-img-top" src="Icons/telesales.png" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Telesales VA </h5>
+                                <p class="card-text">Reach out to prospects, generate leads, and close sales. We will help your business reach a wider audience, build relationships with potential customers, and close more deals.</p>
+                                <a href="#" class="btn btn-primary">Let's Talk</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <img class="card-img-top" src="Icons/va.png" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Admin VA</h5>
+                                <p class="card-text">Providing remote administrative support and assistance. We delegate dedicated and reliable professionals that can help you save time, reduce costs, and improve productivity.</p>
+                               <br> <a href="#" class="btn btn-primary">Let's Talk</a>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card">
+                                <img class="card-img-top" src="Icons/webdev.png" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Web Development</h5>
+                                <p class="card-text">Build and maintain websites and web application including website design and layout, web application development, e-commerce development, content management system (CMS) integration, and search engine optimization (SEO).</p>
+                                <a href="#" class="btn btn-primary">Let's Talk</a>
+                                </div>
+                            </div>
+
+                         </div>
+
+
+                    </section>
+
+
+
+            <section id="rowimg">
+
+            <div class="row pb-5">
+               <div class="row pt-3 pb-5" ><h1 id="service"> Our Expertise</h1></div> 
                 <div class="col-4 col-sm-3 col-md-3 col-lg-2 align-self-center text-center colTechIcons"> <div class="wrapper">
                     <img src="Icons/Hootsuite.png" id="icons"></div>
                 </div>
@@ -159,6 +231,7 @@
                 </div>
 
             </div>
+            </section>
         </div>
 
 
@@ -175,20 +248,18 @@
                                     <li class="nav-item px-5">
                                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                                     </li>
-                                    <li class="nav-item px-5">
-                                        <a class="nav-link active" aria-current="page" href="AboutUs.html">About Us</a>
-                                    </li>
+                                  
                                 <li class="nav-item px-5">
-                                    <a class="nav-link" href="#">Services</a>
+                                    <a class="nav-link disabled" href="Services.html">Services</a>
                                 </li>
                                 <li class="nav-item px-5">
                                     <a class="nav-link" href="#">Portfolio</a>
                                 </li>
-                                <li class="nav-item px-5 disabled" href="JobBoard.html">
-                                    <a class="nav-link">Job Board</a>
+                                <li class="nav-item px-5">
+                                    <a class="nav-link" href="JobBoard.html">Job Board</a>
                                 </li>
-                                <li class="nav-item px-5" href="ContactUs.html">
-                                    <a class="nav-link">Contact Us</a>
+                                <li class="nav-item px-5">
+                                    <a class="nav-link" href="ContactUs.html">Contact Us</a>
                                 </li>
                                 </ul>
                             </div>
@@ -196,36 +267,31 @@
                 </nav>
 
 
-                    <!-- Footer -->
-                    <section class="">
+                  
                     <!-- Footer -->
                     <footer class="text-center text-white" style="background-color: #0a4275;">
-                    <!-- Grid container -->
-                    <div class="container p-4 pb-0">
-                        <!-- Section: CTA -->
-                        <section class="">
-                            <ul class="socials">
-                                <li><a href="#"><img src="Icons/fb.svg" id="social"></a></li>
-                                <li><a href="#"><img src="Icons/fb.svg" id="social"></a></li>
-                                <li><a href="#"><img src="Icons/fb.svg" id="social"></a></li>
-                               
-                            </ul>
-                        </section>
-                        <!-- Section: CTA -->
+                  
+                    <div class="container p-4">
+                      
+                        <ul class="list-group list-unstyled" id="list">
+                            <li id="list"><a href="#!" role="button"><img src="Icons/fb.svg" class="socials"></a></li>
+                            <li id="list"><a href="#!" role="button"><img src="Icons/linkedin.svg" class="socials"></a></li>
+                            <li id="list"> <a href="#!" role="button"><img src="Icons/linkedin.svg" class="socials"></a></li>
+                        </ul>
+                       
                     </div>
-                    <!-- Grid container -->
-                
-                    <!-- Copyright -->
+                   
+                    
                     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                         © 2023 Copyright:
                         <a class="text-white" href="index.html" style="text-decoration: none;">bluerocketstudio.com</a>
                     </div>
-                    <!-- Copyright -->
+                   
                     </footer>
-                    <!-- Footer -->
-                </section>
+                  
+             
                     
-                    <!-- Footer -->
+                    
  
 
 
