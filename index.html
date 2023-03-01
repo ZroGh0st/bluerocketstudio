@@ -16,22 +16,26 @@
      }
      #land{
       width: 100%;
-      height: 95vh;
+      height: 92vh;
 
      }
      #about{
       width: 100%;
-      height: 90vh;
-      background-color: #0082ca;
+      height: 92vh;
+      background-image: url("brs.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: 100px;
+
      }
      #aboutleft{
-      width: 100%;
+      width: 60%;
       height: 90vh;
 
      }
     #left{
       width: 50%;
-      height: 95vh;
+      height: 92vh;
       align-items: center;
       justify-content: center;
       display: flex;
@@ -41,7 +45,7 @@
    
     #right{
       width: 50%;
-      height:95vh;
+      height:90vh;
       align-items: center;
       justify-content: center;
       display: flex;
@@ -102,14 +106,12 @@
       width: 300px;
      }
      #about-cont{
-      margin: 50px;
-      text-align: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      margin-top: 30px;
       font-family: "Montserrat",sans-serif;
-      font-size: 60px;
-      font-weight: 600;
+      font-size: 80px;
+      font-weight: 800;
+      text-align: right;
+      align-items: end;
      }
      .paragraph{
       font-family: "Montserrat",sans-serif;
@@ -118,8 +120,9 @@
       
      }
      #abt-us{
-      width: 75%;
-      height: 80vh;
+      width: 50%;
+      height: 90vh;
+
      }
      .fa {
       padding: 20px;
@@ -152,6 +155,7 @@
     </style>
 
 </head>
+
 <body>
 
             <div class="container-fluid mt-lg-5" id="maincontainer">
@@ -201,10 +205,10 @@
                       <br> <br>
                                       <!--  About Page  -->
 
-                                        <div class="container-fluid mt-3 " id="about">
-                                              <div class="row p-3 " id="aboutleft">
-                                                <div class="container" id="abt-us">
-                                                <h1 style="text-align: center;" id="about-cont"> About Us</h1> <br><br>
+                                        <div class="container-fluid " id="about">
+                                          <section class="cont" style="float: left; width: 40%;"><h1 id= "about-cont"style="text-align: center;"> About Us</h1></section>
+                                                <section class="cont" id="abt-us" style="float: right; margin-right: 40px;">
+
                                                 <p class="paragraph">
                                                   At Blue Rocket Studio, we are a team of dedicated freelancers who share a passion for delivering high-quality work to our clients. 
                                                   We believe in the power of collaboration and work together to provide a wide range of creative and technical services to businesses of all sizes.
@@ -221,38 +225,18 @@
                                                     At Blue Rocket Studio, we are committed to delivering high-quality work that is both effective and visually appealing. 
                                                     We take pride in our attention to detail and our ability to deliver projects on time and within budget.
                                                   </p>
-                                                  
-                                                  <p class="paragraph">
-                                                      As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, 
-                                                      but actually conveys no tangible information at. It simply takes up space and should not really be read.
-                                                  </p>
-                                                  
+
                                                   <p class="paragraph">
                                                         If you are looking for a reliable and professional freelancing agency to help you with your next project, look no further than Blue Rocket Studio. 
                                                         Contact us today to learn more about our services and how we can help you achieve your business goals.
                                                   </p>
 
-                                                </div>
+                                                </section>
 
-                                              </div>
-
-
-                                            
-
-
-                                                  
-                                                
 
                                         </div>
 
-
-                                       
-            </div> 
-                                    
-                     
-          
-
-                        <!--  Navagation  -->
+                            <!--  Navagation  -->
                   
                             <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                               <div class="container-fluid">
@@ -283,50 +267,55 @@
                             </nav>
 
 
-                            <!--  Footer  -->
+                           
+                                       
+            </div> 
+
+
+             <!--  Footer  -->
                             
-                            <footer class="text-center text-white" style="background-color: #0a4275;">
+             <footer class="text-center text-white" style="background-color: #0a4275;">
                   
-                              <div class="container p-4">
-                                
-                                  
-                                <a
-                                class="btn text-white btn-floating m-1"
-                                style="background-color: #3b5998;"
-                                href="#!"
-                                role="button"
-                                >f<i class="fab fa-facebook-f"></i
-                              ></a>
-                        
-                              <!-- Google -->
-                              <a
-                                class="btn text-white btn-floating m-1"
-                                style="background-color: #dd4b39;"
-                                href="#!"
-                                role="button"
-                                >g<i class="fab fa-google"></i
-                              ></a>
-                        
-                              <!-- Linkedin -->
-                              <a
-                                class="btn text-white btn-floating m-1"
-                                style="background-color: #0082ca;"
-                                href="#!"
-                                role="button"
-                                >in<i class="fab fa-linkedin-in"></i
-                              ></a>
-                                  
-                                 
-                              </div>
-                             
-                              
-                              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                                  © 2023 Copyright:
-                                  <a class="text-white" href="index.html" style="text-decoration: none;">Blue Rocket Studio</a>
-                              </div>
-                             
-                              </footer>
-   
+              <div class="container p-4">
+                
+                  
+                <a
+                class="btn text-white btn-floating m-1"
+                style="background-color: #3b5998;"
+                href="#!"
+                role="button"
+                >f<i class="fab fa-facebook-f"></i
+              ></a>
+        
+              <!-- Google -->
+              <a
+                class="btn text-white btn-floating m-1"
+                style="background-color: #dd4b39;"
+                href="#!"
+                role="button"
+                >g<i class="fab fa-google"></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a
+                class="btn text-white btn-floating m-1"
+                style="background-color: #0082ca;"
+                href="#!"
+                role="button"
+                >in<i class="fab fa-linkedin-in"></i
+              ></a>
+                  
+                 
+              </div>
+             
+              
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                  © 2023 Copyright:
+                  <a class="text-white" href="index.html" style="text-decoration: none;">Blue Rocket Studio</a>
+              </div>
+             
+              </footer>
+
        
 </body>
 </html>
