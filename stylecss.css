@@ -88,21 +88,27 @@ nav ul li a:hover{
     font-family:sans-serif;
     line-height: 80px;
     text-align: center;
+    color: white;
 }
 .col-2 p{
     font-size: 24px;
     font-weight: 100;
     margin-top: 40px;
     text-align: left;
-    margin-right: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    color: white;
+    
 
 }
+
+
 
 .btnLearn{
     text-align: center;
     margin-top: 80px;
     padding-bottom: 20px;
-    transform: translateX(120px);
+    transform: translateX(10px);
 }
 .btnLearn button{
     width: 140px;
@@ -126,16 +132,24 @@ nav ul li a:hover{
     position: relative;
     display: flex;
     align-items: center;
+    
 
+}
+.bg-image{
+    background-image: url("brs.png");
+    
+}
+.col-left h1{
+    font-weight: bold;
 }
 
 .col-right{
-    flex-basis: 80%;
+    flex-basis: 100%;
     position: relative;
     text-align: center;
 
 }
-.col-right img{
+.col-left img{
     width: 80%;
 }
 .about p{
