@@ -95,12 +95,7 @@ nav ul li a:hover{
     height: 160px;
   }
   .container{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: #3786e6;
-
-
-
+    background: #e9ecef;
   }
   #icons{
     height: 100px;
@@ -140,7 +135,5 @@ nav ul li a:hover{
         transition: 0.5s;
         font-size: 10px;
     }
-    .carousel{
-        margin-top: 100px;
-    }
+
 }
