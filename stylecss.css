@@ -137,6 +137,7 @@ nav ul li a:hover{
 }
 .bg-image{
     background-image: url("brs.png");
+    background-size:cover;
     
 }
 .col-left h1{
