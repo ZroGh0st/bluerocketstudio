@@ -215,27 +215,26 @@
                     <form id="contactForm" class="form-control">
                             
                         <!-- Name Input -->
-                        <label class="label-input100">TELL US YOUR NAME</label>
                         <div class="form-floating mb-3">
-                            <input type="text" id= "firstname" class="form-control" placeholder="Enter First name">
+                            <input type="text" id= "firstname" class="form-control" placeholder="Enter First name" required>
                             <label for="firstname">First Name</label>
 
                         </div>
 
                         <div class="form-floating mb-3">
-                            <input type="text" id= "lastname" class="form-control" placeholder="Enter Last name">
+                            <input type="text" id= "lastname" class="form-control" placeholder="Enter Last name" required>
                             <label for="lastname">Last Name</label>
                         </div>
 
                         <!-- Email Input -->
                         <div class="form-floating mb-2">
-                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+                            <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" required/>
                             <label for="emailAddress">Email Address</label>
                         </div>
                         
                         <!-- Number Input -->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="emailAddress" type="number" placeholder="phone Number"/>
+                            <input class="form-control" id="emailAddress" type="number" placeholder="phone Number" required/>
                             <label for="emailAddress">Phone Number</label>
                         </div>
 
@@ -249,7 +248,7 @@
 
                         <!-- Submit button -->
                         <div class="d-grid">
-                            <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                            <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button>
                         </div>
                         </form>
                         <!-- End of contact form -->
