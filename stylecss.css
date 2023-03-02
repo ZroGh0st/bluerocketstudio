@@ -114,7 +114,6 @@ nav ul li a:hover{
     width: 140px;
     padding: 12px 10px;
     border: 0;
-    cursor: pointer;
     border-radius: 6px;
     text-align: center;
     margin-bottom: 20px;
@@ -138,7 +137,7 @@ nav ul li a:hover{
 .bg-image{
     background-image: url("brs.png");
     background-size:cover;
-    
+
 }
 .col-left h1{
     font-weight: bold;
